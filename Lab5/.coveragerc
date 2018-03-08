@@ -1,0 +1,3 @@
+[run]
+source = Lab5
+omit = Lab5/test*

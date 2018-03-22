@@ -1,0 +1,18 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+
+<div class="content">
+  <h1><span style="color: {{color}}" class="font-semi-bold">Pyramid</span> <span class="smaller">Starter project</span></h1>
+</div>
+
+<form method="POST" action="http://localhost:6543/bg_change">
+    Background color: <input type="text" name="bgcolor"><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p>
+	Click on "Submit" button and the background color will be altered to match, if possible
+</p>
+
+{% endblock content%}

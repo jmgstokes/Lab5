@@ -1,9 +1,14 @@
 {% extends "layout.jinja2" %}
 
 {% block content %}
+
+<style type="text/css">
+	BODY{background-color: {{bgcolor}}};
+</style>
+
 <div class="content">
   <h1><span style="color: {{color}}" class="font-semi-bold">Pyramid</span> <span class="smaller">Starter project</span></h1>
-  <p class="lead">Welcome to <span class="{{weight}}">Lab5</span>, a&nbsp;Pyramid application generated&nbsp;by<br><span class="font-normal">Cookiecutter</span>.</p>
+  <p class="lead">Welcome to <span class="{{weight}}">CS350</span>, a&nbsp;Pyramid application generated&nbsp;by<br><span class="font-normal">Cookiecutter</span>.</p>
 </div>
 
 <ul style="list-style-type:none">
@@ -13,9 +18,14 @@
 </ul>
 
 <ul style="list-style-type:none">
-	<li><a href="http://localhost:6543/weight/font-bold"> Change 'Lab5' Text to Bold</a></li>
-	<li><a href="http://localhost:6543/weight/font-semi-bold"> Change 'Lab5' Text to Semi-Bold</a></li>
+	<li><a href="http://localhost:6543/weight/font-bold"> Change 'CS350' Text to Bold</a></li>
+	<li><a href="http://localhost:6543/weight/font-semi-bold"> Change 'CS350' Text to Semi-Bold</a></li>
+</ul>
+
+<ul style="list-style-type:none">
+	<li><a href="http://localhost:6543/new_bg"> Change the Background of This Page to a Color of Your Choice</a></li>
 	<li><a href="http://localhost:6543"> Return Home</a></li>
 </ul>
+
 
 {% endblock content %}
